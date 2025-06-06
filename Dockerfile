@@ -35,7 +35,7 @@ RUN apk add --no-cache \
     postgresql-client \
     && rm -rf /var/cache/apk/*
 
--RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 
 WORKDIR /app
 
